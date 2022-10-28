@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+  }
+  
+  body {
+    height: 100%;
+    width: 100%;
+    background-color: #262626;
+  }
+  
+  .column {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 80px;
+  }
+  
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  
+  .nav_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 80px;
+    width: 120px;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #04AA6D;
+  }
+  
+  .heading1 {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    text-align: left;
+    padding: 0 0 0 40px;
+  }
+  
+  .container{
+    width: 60%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    padding: 25px 30px;
+  }
+  
+  .content form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+  }
+  
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 300px;
+  }
+  
+  form .input-box span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+  }
+  
+  form .button{
+    height: 45px;
+    width: 120px;
+    margin: 35px 0
+  }
+  
+  form .button input{
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    background: grey;
+  }
+  
+  form .button input:hover{
+    background: #04AA6D;
+  }
+  
+  span {
+    color: white;
+  }
+  
